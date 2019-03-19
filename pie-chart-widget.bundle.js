@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('base-widget')) :
-	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'base-widget'], factory) :
-	(factory((global['plugin-a'] = {}),global.core,global.baseWidget));
-}(this, (function (exports,core,baseWidget) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core')) :
+	typeof define === 'function' && define.amd ? define(['exports', '@angular/core'], factory) :
+	(factory((global['plugin-a'] = {}),global.core));
+}(this, (function (exports,core) { 'use strict';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -60,9 +60,7 @@ var PieChartWidgetModule = /** @class */ (function () {
     }
     PieChartWidgetModule = __decorate([
         core.NgModule({
-            imports: [
-                baseWidget.BaseWidgetModule
-            ],
+            imports: [],
             providers: [{
                     provide: 'widgets',
                     useValue: [{
